@@ -6,7 +6,7 @@ function pesquisar() {
     let resultadoPesquisa = document.getElementById('resultado-pesquisa'); 
   
     // Busca o índice do objeto atleta no array de dados que corresponda ao valor digitado
-    const indiceDoObjetoAtleta = dados.findIndex(nome => nome.titulo === inputPesquisar.value);
+    const indiceDoObjetoAtleta = dados.findIndex(nome => nome.titulo.toLowerCase() === (inputPesquisar.value).toLowerCase());
   
     // Verifica se o atleta foi encontrado (índice diferente de -1)
     if (indiceDoObjetoAtleta !== -1) {
@@ -24,4 +24,5 @@ function pesquisar() {
       resultadoPesquisa.removeAttribute('hidden');
       resultadoPesquisa.textContent = `Atleta não encontrado.`
     }
-  }
+    
+  } 
