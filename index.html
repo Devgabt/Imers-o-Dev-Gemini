@@ -14,36 +14,16 @@
     </header>
     <main>
         <section>
-            <input type="text" placeholder="Digite o nome do atleta">
-            <button>Pesquisar</button>
+            <input type="text" placeholder="Digite o nome do atleta" id="input-pesquisar">
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
         <section class="resultados-pesquisa">
-            <div class="item-resultado">
+            <div class="item-resultado" id="resultado-pesquisa" hidden>
                 <h2>
-                    <a href="#" target="_blank">Rebeca Andrade</a>
+                    <a href="#" target="_blank" id="titulo-atleta"></a>
                 </h2>
-                <p class="descricao-meta">Rebeca Andrade é uma das maiores ginastas da história do Brasil. Com um talento inegável e uma força de
-                    vontade admirável, ela conquistou o coração dos brasileiros e se tornou um ícone do esporte nacional.
-                </p>
-                <a href="https://pt.wikipedia.org/wiki/Rebeca_Andrade" target="_blank">Mais informações</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Rayssa Leal</a>
-                </h2>
-                <p class="descricao-meta">Rayssa Leal, conhecida como "Fadinha", é uma skatista brasileira que se tornou a mais jovem medalhista olímpica da história do Brasil. Com seu estilo único e carisma, ela conquistou fãs ao redor do mundo.
-                </p>
-                <a href="https://pt.wikipedia.org/wiki/Rayssa_Leal" target="_blank">Mais informações</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Beatriz Souza</a>
-                </h2>
-                <p class="descricao-meta">Beatriz Souza é uma judoca brasileira que conquistou a medalha de ouro nas Olimpíadas de Paris. Sua conquista histórica representou um marco para o judô feminino brasileiro.
-                </p>
-                <a href="#" target="_blank">Mais informações</a>
+                <p class="descricao-meta" id="descricao-atleta"></p>
+                <a href="" target="_blank" id="sobre-atleta">Mais informações</a>
             </div>
         </section>
     </main>
@@ -51,7 +31,7 @@
         <p>2024 - Atletas do Brasil. Todos os direitos reservados</p>
         <p>Entre em contato pelo email: devgabt@gmail.com</p>
     </footer>
-    <script></script>
-</body>
+    <script src="dados.js"></script>
 <script src="app.js"></script>
+</body>
 </html>
