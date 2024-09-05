@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Olimpíadas</title>
 </head>
-
 <body>
     <header>
-        <h1>Atletas do Brasil</h1>
+        <h1 id="tituloPrincipal">Atletas do Brasil</h1>
     </header>
     <main>
         <section>
+            <!-- Campo de input para busca de atletas -->
             <input type="text" placeholder="Digite o nome do atleta" id="input-pesquisar">
-            <button onclick="pesquisar()">Pesquisar</button>
+            <!-- Botão para acionar a função de busca -->
+             <div class="botoes">
+                <button onclick="pesquisar()">Pesquisar</button>
+                <button onclick="limparHistorico()" >Limpar histórico</button>
+             </div>
+
         </section>
         <section class="resultados-pesquisa">
+            <!-- Container para exibir o resultado da pesquisa -->
             <div class="item-resultado" id="resultado-pesquisa" hidden>
                 <h2>
                     <a href="#" target="_blank" id="titulo-atleta"></a>
@@ -31,7 +36,8 @@
         <p>2024 - Atletas do Brasil. Todos os direitos reservados</p>
         <p>Entre em contato pelo email: devgabt@gmail.com</p>
     </footer>
+    <!-- Inclusão dos scripts do projeto -->
     <script src="dados.js"></script>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

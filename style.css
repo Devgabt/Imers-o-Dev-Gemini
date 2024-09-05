@@ -107,3 +107,8 @@ footer {
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
+
+/* Alinha horizontalmente os botões */
+.botoes{
+    display: inline-block;
+}
